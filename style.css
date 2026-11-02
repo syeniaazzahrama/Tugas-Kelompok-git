@@ -1,4 +1,5 @@
 
+
 /* Tampilan halaman */
 body {
     font-family: Arial, sans-serif;
@@ -71,4 +72,22 @@ button {
 
 button:hover {
     background-color: #27ae60;
+}
+
+/* Tambahan tombol Edit dan Delete */
+a.action-edit {
+    background-color: #3498db;
+    margin-right: 5px;
+}
+
+a.action-delete {
+    background-color: #e74c3c;
+}
+
+a.action-edit:hover {
+    background-color: #2980b9;
+}
+
+a.action-delete:hover {
+    background-color: #c0392b;
 }
