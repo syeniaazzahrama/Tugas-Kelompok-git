@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (isset($_SESSION["username"])) {
+    header("Location: student_view.php");
+    exit;
+}
   if (isset($_POST["submit"])) {
     $username = htmlentities(strip_tags(trim($_POST["username"])));
     $password = htmlentities(strip_tags(trim($_POST["password"])));
