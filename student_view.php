@@ -1,6 +1,12 @@
 
-
 <?php
+session_start();
+
+if (!isset($_SESSION["username"])) {
+    header("Location: login.php");
+    exit;
+}
+
 include "connection.php";
 
 // Mengambil data mahasiswa
@@ -30,6 +36,7 @@ $result = mysqli_query($connection, $query);
             <th>Fakultas</th>
             <th>Jurusan</th>
             <th>IPK</th>
+            <th>Aksi</th>
         </tr>
 
         <?php
@@ -44,6 +51,15 @@ $result = mysqli_query($connection, $query);
             <td><?php echo $data['faculty']; ?></td>
             <td><?php echo $data['department']; ?></td>
             <td><?php echo $data['gpa']; ?></td>
+
+            <td>
+                <a class="action-edit" href="student_edit.php?nim=<?php echo $data['nim']; ?>">Edit</a>
+
+                <a class="action-delete" href="student_delete.php?nim=<?php echo $data['nim']; ?>"
+                   onclick="return confirm('Yakin ingin menghapus data ini?')">
+                   Delete
+                </a>
+            </td>
         </tr>
 
         <?php } ?>
