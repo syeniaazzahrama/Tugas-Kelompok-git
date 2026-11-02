@@ -90,3 +90,11 @@ a.action-edit:hover {
 a.action-delete:hover {
     background-color: #c0392b;
 }
+
+a.action-logout {
+    background-color: #e74c3c;
+}
+
+a.action-logout:hover {
+    background-color: #c0392b;
+}

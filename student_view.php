@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -55,9 +54,10 @@ $result = mysqli_query($connection, $query);
             <td>
                 <a class="action-edit" href="student_edit.php?nim=<?php echo $data['nim']; ?>">Edit</a>
 
-                <a class="action-delete" href="student_delete.php?nim=<?php echo $data['nim']; ?>"
-                   onclick="return confirm('Yakin ingin menghapus data ini?')">
-                   Delete
+                <a class="action-delete"
+                href="student_delete.php?nim=<?php echo $data['nim']; ?>"
+                onclick="return confirm('Yakin ingin menghapus data ini?')">
+                    Delete
                 </a>
             </td>
         </tr>
@@ -65,6 +65,13 @@ $result = mysqli_query($connection, $query);
         <?php } ?>
 
     </table>
+
+    <br><br>
+
+<a class="action-logout" href="logout.php"
+    onclick="return confirm('Yakin ingin logout?')">
+    Logout
+</a>
 
 </body>
 </html>
