@@ -1,0 +1,74 @@
+
+/* Tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 30px;
+    color: #333;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Tombol dan link */
+a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+/* Tabel mahasiswa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Form input */
+input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Tombol simpan */
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
